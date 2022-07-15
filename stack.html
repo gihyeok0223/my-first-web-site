@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <title>data struct - Stack - practice</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h1><a href="index.html">Data Structure</a></h1>
+
+        <ol>
+            <li><a href="stack.html">Stack</a></li>
+            <li><a href="queue.html">Queue</a></li>
+        </ol>
+
+        <h2>Stack</h2>
+        <p>
+            <img src="data:image/png;base64,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"
+            width="200px"><br>
+            <a href="https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%83%9D"
+            target="_blank" title="스택의 정의">스택(stack)</a>은 제한적으로 접근할 수 있는 나열 구조이다. 그 접근 방법은 언제나 목록의 끝에서만 일어난다. 끝먼저내기 목록(Pushdown list)이라고도 한다.
+            스택은 한 쪽 끝에서만 자료를 넣거나 뺄 수 있는 선형 구조<strong>(LIFO - Last In First Out)</strong>으로 되어 있다. 
+            자료를 넣는 것을 '밀어넣는다' 하여 푸쉬(push)라고 하고 반대로 넣어둔 자료를 꺼내는 것을 팝(pop)이라고 하는데, 이때 꺼내지는 자료는 가장 최근에 푸쉬한 자료부터 나오게 된다.
+            이처럼 <strong><u>나중에 넣은 값이 먼저 나오는 것을 LIFO 구조</u></strong>라고 한다.
+        </p>
+        <p>
+            <a href="use_stack.html">How to use Stack??</a>
+        </p>
+
+    </body>
+
+</html>

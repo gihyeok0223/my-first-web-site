@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+
+    <head>
+        <title>data struct - Queue - practice</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+
+        <h1><a href="index.html">Data Structure</a></h1>
+
+        <ol>
+            <li><a href="stack.html">Stack</a></li>
+            <li><a href="queue.html">Queue</a></li>
+        </ol>
+
+        <h2>Queue</h2>
+        <p>
+            <img src="data:image/png;base64,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"
+            width="300px"><br>
+            <a href="https://ko.wikipedia.org/wiki/%ED%81%90_(%EC%9E%90%EB%A3%8C_%EA%B5%AC%EC%A1%B0)"
+            target="_blank" title="큐의 정의">큐(queue)</a>는 컴퓨터 과학 분야에서 쓰이는 컴퓨터의 기본적인 자료 구조의 한가지로, 
+            먼저 집어 넣은 데이터가 먼저 나오는 <strong>FIFO(First In First Out)구조</strong>로 저장하는 형식을 말한다. 
+            영어 단어 queue는 표를 사러 일렬로 늘어선 사람들로 이루어진 줄을 말하기도 하며, 먼저 줄을 선 사람이 먼저 나갈 수 있는 상황을 연상하면 된다.<br>
+            <strong><u>나중에 집어 넣은 데이터가 먼저 나오는 스택과는 반대되는 개념이다.</u></strong>
+        </p>
+        <p>
+            <a href="use_queue.html">How to use Queue??</a>
+        </p>
+    </body>
+
+</html>
